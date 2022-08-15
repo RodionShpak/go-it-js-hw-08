@@ -22,9 +22,10 @@ function onSubmitForm(e) {
     if (message.value === '' || email.value === '') {
         alert(`Все поля должны быть заполнены`);
     } else {
+        console.log(formData);
         e.currentTarget.reset();
         localStorage.removeItem(STORAGE_KEY);
-        console.log(formData);
+
     }
 }
 
